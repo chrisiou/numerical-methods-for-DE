@@ -36,7 +36,7 @@ def err_Euler(l,NN):
     return max(abs(y(t,l) - y_approx))
 
 def err_Taylor(l,NN):
-    t = np.linspace(0,5,NN+1)# Σημείαδιαμερισμουστο [0,5], Ν+1
+    t = np.linspace(0,5,NN+1)# Σημεία διαμερισμουστο [0,5], Ν+1
     h = t[1]-t[0]
     y_approx = np.zeros(NN+1)
 

@@ -223,7 +223,7 @@ for i in range(N): # εύρεση σταθερού σημείου
     
     while (err > tol) and (k <= Nmax):
         x = g_4(t[i+1],y_approx[i],x0) # επόμενη προσέγγιση
-        e = abs(x-x0) # σφάλμα
+        err = abs(x-x0) # σφάλμα
         k = k+1 # αυξάνουμε τον μετρητή βημάτων
         x0 = x
         

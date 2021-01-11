@@ -29,7 +29,7 @@ def Euler_implicit(t,h,N):
             k = k+1
             x0 = x
         
-        y[i+1] = y[i]+h*f(t[i],y[i])
+        y[i+1] = y[i]+h*f(t[i],y[i]) #= x ?kanonika
 
     return y
 

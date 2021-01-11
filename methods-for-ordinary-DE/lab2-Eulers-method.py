@@ -47,6 +47,7 @@ y_approx[0]=1 # Αρχική τιμή
 for i in range(N):
     y_approx[i+1] = y_approx[i] + h*f(t[i],y_approx[i])
 
+print(f"y_exact = {y(t[5])}")
 print(y_approx[10])
 print(t[10])
 plt.plot(t,y_approx)

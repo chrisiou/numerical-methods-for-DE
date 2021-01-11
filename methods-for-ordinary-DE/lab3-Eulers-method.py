@@ -213,6 +213,7 @@ t = np.linspace(0,2*np.pi,N+1)
 makeGraph(x_exact(t),y_exact(t), t, "")
 
 # 5.2
+plt.title("x_exact-y_exact")
 plt.plot(x_exact(t),y_exact(t))
 plt.show()
 
@@ -241,5 +242,10 @@ for i in range(N):
 # Στην Numpy η παρακάτω πράξη γίνεται σε κάθε στοιχείο των διανυσμάτων x,y
 s = max(x**2+y**2)
 print(s)
+
+makeGraph(x,x_exact(t), t, "x(t)")
+makeGraph(y,y_exact(t), t, "y(t)")
+
+plt.title("x_approx-y_approx")
 plt.plot(x,y)
 plt.show()
